@@ -22,5 +22,6 @@ a {
 }
 
 a.active {
+    transition: 1s;
     color: rgb(155, 1, 1);
 }

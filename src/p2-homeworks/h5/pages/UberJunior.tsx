@@ -1,10 +1,10 @@
 import React from 'react'
 
-function UnterJunior() {
+function UberJunior() {
     return (
         <div>
         </div>
     )
 }
 
-export default UnterJunior
+export default UberJunior

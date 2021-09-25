@@ -1,5 +1,5 @@
 .App {
-    animation: Down 5s forwards;
+    animation: Down 1s forwards;
 }
 
 @keyframes Down {

@@ -1,0 +1,23 @@
+.homeworkWrapper {
+    margin: 0 auto;
+}
+
+.nava {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.nava * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Trebuchet MS", "Lucida Sans";
+    font-size: 20px;
+}
+
+.active {
+    transition: 1s;
+    color: #9b0101;
+}
