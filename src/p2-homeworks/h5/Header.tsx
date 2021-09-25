@@ -1,13 +1,18 @@
 import React from 'react'
-import styles from './Header.module.css'
+import {NavLink} from 'react-router-dom'
+import styles from './pages/Header.module.css'
 
 function Header() {
     return (
-        <div>
-            <div>unter-junior</div>
-            <div>junior</div>
-            <div>uber-junior</div>
-        </div>
+            <div className={styles.nava}>
+                <div className={styles.unterJunior}><NavLink exact to={'/unter-junior'}
+                                                             activeClassName={styles.active}>unter-junior</NavLink>
+                </div>
+                <div className={styles.Junior}><NavLink exact to={'/junior'}
+                                                        activeClassName={styles.active}>junior</NavLink></div>
+                <div className={styles.uberJunior}><NavLink exact to={'/uber-junior'}
+                                                            activeClassName={styles.active}>uber-junior</NavLink></div>
+            </div>
     )
 }
 

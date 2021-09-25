@@ -1,3 +1,9 @@
 .App {
+    animation: Down 5s forwards;
+}
 
+@keyframes Down {
+    to {
+        transform: translateY(50px);
+    }
 }
