@@ -7,6 +7,15 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+    transform: translateX(-100vmax);
+    animation: fromLeft 1s forwards;
+    animation-delay: .1s;
+}
+
+@keyframes fromLeft {
+    to {
+        transform: translateX(0);
+    }
 }
 
 .nava * {

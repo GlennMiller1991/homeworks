@@ -5,6 +5,9 @@ import HW4 from "../../h4/HW4";
 import HW3 from "../../h3/HW3";
 import HW2 from "../../h2/HW2";
 
+const taskType = 0 | 1 | 2 | 3 | 4 | 5 | 100;
+
+
 const homeworks = [
     {
         id: 0,
@@ -31,7 +34,7 @@ const homeworks = [
 function UnterJunior() {
 
     //initial states
-    const [task, setTask] = useState<number>(0)
+    const [task, setTask] = useState<number>(100)
 
     return (
         <div className={styles.wrapper}>
@@ -43,7 +46,7 @@ function UnterJunior() {
                 })}
             </div>
             <div className={styles.homeworkWrapper}>
-                {homeworks[task].code}
+                { task !== 100 && homeworks[task].code }
             </div>
         </div>
     )

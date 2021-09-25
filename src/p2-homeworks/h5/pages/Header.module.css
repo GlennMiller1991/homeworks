@@ -3,7 +3,15 @@
     grid-template-columns: 1fr 1fr 1fr;
     border-bottom: 20px solid #444444;
     border-radius: 0 0 20px 20px;
-    transform: translateY(-50px);
+    transform: translateX(100vmax);
+    animation: fromRight 1s forwards;
+    margin-bottom: 25px;
+}
+
+@keyframes fromRight {
+    to {
+        transform: translateX(0);
+    }
 }
 
 .unterJunior, .Junior, .uberJunior {
@@ -24,4 +32,10 @@ a {
 a.active {
     transition: 1s;
     color: rgb(155, 1, 1);
+}
+
+.errorWrapper {
+    color: #444444;
+    text-align: center;
+    vertical-align: center;
 }

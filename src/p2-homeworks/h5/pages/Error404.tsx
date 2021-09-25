@@ -1,11 +1,12 @@
 import React from 'react'
+import styles from './Header.module.css'
 
 function Error404() {
     return (
-        <div>
-            <div>404</div>
-            <div>Page not found!</div>
-            <div>—ฅ/ᐠ.̫ .ᐟ\ฅ—</div>
+        <div className={styles.errorWrapper}>
+            <h1>404</h1>
+            <h1>Page not found!</h1>
+            <h1>—ฅ/ᐠ.̫ .ᐟ\ฅ—</h1>
         </div>
     )
 }
