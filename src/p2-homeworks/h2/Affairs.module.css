@@ -1,0 +1,55 @@
+#wrapper {
+    margin-left: 50px;
+    display: grid;
+    justify-items: center;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-left: 5px solid #444444;
+    border-top: 5px solid #444444;
+    transition: 1s;
+}
+
+.btn:hover {
+    animation-iteration-count: infinite;
+    background-color: rgb(155, 1, 1);
+    transform: scale(1.1);
+}
+
+.btns {
+    margin-left: 40px;
+    justify-self: center;
+}
+
+.affairs {
+    list-style: none;
+}
+
+
+.affairs li {
+    position: relative;
+    font-family: "Trebuchet MS", "Lucida Sans";
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 50px 50px 50px 5px;
+    border-left:50px solid #444444;
+    box-shadow: 2px -2px 5px 0 rgba(28, 16, 16, .2);
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+
+.affairs li:hover {
+    transform: translate(50px);
+    border-left-color: rgb(155, 1, 1);
+}
+
+.affair {
+    border: 2px solid black;
+}
+
+
+

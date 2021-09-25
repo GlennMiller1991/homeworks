@@ -1,0 +1,40 @@
+.lbl {
+    margin: 20px 0;
+    position: relative;
+    display: inline-block;
+}
+
+.superInput {
+    padding: 10px;
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    font-family: monospace;
+}
+
+.superInput::placeholder {
+    color: white;
+    font-family: monospace;
+}
+
+.superInput:focus {
+    background-color: #029393;
+}
+
+.superInput:focus::placeholder {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.errorInput {
+    border: 1px solid red;
+}
+
+.error {
+    position: absolute;
+    right: -10px;
+    padding: 10px;
+    transform: scale(0.75) translateY(-100%);
+    color: red;
+}
