@@ -1,10 +1,12 @@
 import React from 'react'
+import styles from './Header.module.css'
 
 function Header() {
     return (
         <div>
-            // add NavLinks
-
+            <div>unter-junior</div>
+            <div>junior</div>
+            <div>uber-junior</div>
         </div>
     )
 }
