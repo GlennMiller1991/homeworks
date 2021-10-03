@@ -1,38 +1,37 @@
 import React, {useState} from 'react'
-import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan'
-import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
-import {restoreState, saveState} from './localStorage/localStorage'
+import SuperEditableSpan from './SuperEditableSpan'
+import SuperButton from './SuperButton'
+import {restoreState, saveState} from './localStorage'
+import styles from './HW6.module.css'
 
 function HW6() {
+
+    //initial states
     const [value, setValue] = useState<string>('')
 
+    //functions
     const save = () => {
         saveState<string>('editable-span-value', value)
     }
     const restore = () => {
-        // setValue()
+        setValue(restoreState('editable-span-value', ''))
     }
 
     return (
-        <div>
+        <div className={styles.wrapper}>
             <hr/>
-            homeworks 6
-
-            {/*should work (должно работать)*/}
             <div>
                 <SuperEditableSpan
+                    autoFocus
                     value={value}
                     onChangeText={setValue}
-                    spanProps={{children: value ? undefined : 'enter text...'}}
+                    spanProps={{children: value ? undefined : 'local storage demo'}}
+                    className={styles.input}
+                    spanClassName={styles.spanch}
                 />
             </div>
-            <SuperButton onClick={save}>save</SuperButton>
-            <SuperButton onClick={restore}>restore</SuperButton>
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperEditableSpan/>*/}
-            <hr/>
+            <SuperButton onClick={save} className={styles.button}>save</SuperButton>
+            <SuperButton onClick={restore} className={styles.button}>restore</SuperButton>
         </div>
     )
 }

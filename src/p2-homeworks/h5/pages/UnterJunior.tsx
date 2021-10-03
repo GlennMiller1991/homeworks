@@ -4,6 +4,7 @@ import HW1 from "../../h1/HW1";
 import HW4 from "../../h4/HW4";
 import HW3 from "../../h3/HW3";
 import HW2 from "../../h2/HW2";
+import HW6 from "../../h6/HW6";
 
 const taskType = 0 | 1 | 2 | 3 | 4 | 5 | 100;
 
@@ -29,12 +30,17 @@ const homeworks = [
         code: <HW4/>,
         title: 'fourth homework'
     },
+    {
+        id: 4,
+        code: <HW6/>,
+        title: 'fifth homework'
+    },
 ]
 
 function UnterJunior() {
 
     //initial states
-    const [task, setTask] = useState<number>(100)
+    const [task, setTask] = useState<number>(4)
 
     return (
         <div className={styles.wrapper}>

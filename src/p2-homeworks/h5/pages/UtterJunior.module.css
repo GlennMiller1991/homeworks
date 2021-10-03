@@ -4,7 +4,7 @@
 
 .nava {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     transform: translateX(-100vmax);
