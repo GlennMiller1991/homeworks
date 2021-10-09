@@ -15,7 +15,7 @@ function Routes() {
     return (
         <div>
             <Switch>
-                <Route path={'/'} exact render={() => <Redirect to={PATH.UNTER_JUNIOR}/>}/>
+                <Route path={'/'} exact render={() => <Redirect to={PATH.JUNIOR}/>}/>
                 <Route path={PATH.UNTER_JUNIOR} render={() => <UnterJunior/>}/>
                 <Route path={PATH.JUNIOR} render={() => <Junior/>}/>
                 <Route path={PATH.UBER_JUNIOR} render={() => <UberJunior/>}/>

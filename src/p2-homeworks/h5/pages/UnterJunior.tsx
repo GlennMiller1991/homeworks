@@ -8,7 +8,6 @@ import HW6 from "../../h6/HW6";
 
 const taskType = 0 | 1 | 2 | 3 | 4 | 5 | 100;
 
-
 const homeworks = [
     {
         id: 0,
