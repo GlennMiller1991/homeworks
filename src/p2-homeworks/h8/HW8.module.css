@@ -1,0 +1,12 @@
+.wrapper {
+    text-align: center;
+
+}
+
+.buttons {
+    display: inline-block;
+}
+
+button:active {
+    background-color: #3da8a8;
+}

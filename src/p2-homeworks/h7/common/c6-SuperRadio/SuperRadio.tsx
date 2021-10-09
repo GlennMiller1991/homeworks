@@ -18,7 +18,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
         ...restProps
     }
 ) => {
-    const mappedOptions: any[] = options ? options.map((o, i) => { // map options with key
+    const mappedOptions: any[] = options ? options.map((o, i) => {
 
         const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
             onChange && onChange(e)

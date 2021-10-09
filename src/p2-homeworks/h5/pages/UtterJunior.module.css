@@ -19,12 +19,14 @@
 }
 
 .nava * {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Trebuchet MS", "Lucida Sans";
     font-size: 20px;
 }
+
 
 .active {
     transition: 1s;

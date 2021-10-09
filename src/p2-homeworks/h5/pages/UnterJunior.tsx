@@ -39,7 +39,7 @@ const homeworks = [
 function UnterJunior() {
 
     //initial states
-    const [task, setTask] = useState<number>(4)
+    const [task, setTask] = useState<number>(1)
 
     return (
         <div className={styles.wrapper}>
