@@ -1,0 +1,40 @@
+.wrapper {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    justify-items: center;
+    align-items:start;
+    border: 1px solid #1b61aa;
+    border-radius:10px;
+    text-align: center;
+    background-color: rgba(95, 152, 239, 0.2)
+
+}
+.time {
+    margin-top: 30px;
+    font-size: 3em;
+    color: #1b61aa;
+}
+
+.date {
+    align-self: start;
+    font-size: 2em;
+    color: #1b61aa;
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.btn {
+    margin: 5px;
+    border: 1px solid #1b61aa;
+    color: #3981cd;
+    font-size: 2em;
+    background-color: rgba(95, 152, 239, 0.2);
+    border-radius: 10px;
+}
