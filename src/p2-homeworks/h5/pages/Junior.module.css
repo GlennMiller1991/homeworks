@@ -4,7 +4,7 @@
 
 .nava {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     transform: translateX(-100vmax);
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Trebuchet MS", "Lucida Sans";
+    font-family: "Trebuchet MS", "Lucida Sans", sans-serif;
     font-size: 20px;
 }
 

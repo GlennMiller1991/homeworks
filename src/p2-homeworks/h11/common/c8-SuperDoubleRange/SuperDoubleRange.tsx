@@ -1,22 +1,33 @@
 import React from 'react'
+import {Slider} from "@mui/material";
+import styles from './SuperDoubleRange.module.css'
 
 type SuperDoubleRangePropsType = {
-    onChangeRange?: (value: [number, number]) => void
-    value?: [number, number]
-    // min, max, step, disable, ...
+    onChangeRange: (value: number[]) => void
+    value: [number, number]
 }
 
 const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     {
-        onChangeRange, value,
-        // min, max, step, disable, ...
+        onChangeRange,
+        value
+    }) => {
+    const onChangeCallback = (e: Event, value: number | number[]) => {
+        if (typeof (value) === typeof ([])) {
+            //@ts-ignore
+            onChangeRange(value)
+        }
     }
-) => {
-    // сделать самому, можно подключать библиотеки
-
     return (
         <>
-            DoubleRange
+            <div className={styles.slider}>
+                <Slider value={value}
+                        getAriaLabel={() => 'Percentage range'}
+                        valueLabelDisplay="auto"
+                        onChange={onChangeCallback}
+                        size={'small'}
+                />
+            </div>
         </>
     )
 }
