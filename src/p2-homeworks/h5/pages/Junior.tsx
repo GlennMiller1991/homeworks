@@ -35,7 +35,7 @@ const homeworks = [
 ]
 
 function Junior() {
-    const [task, setTask] = useState<number>(homeworks.length - 1)
+    const [task, setTask] = useState<number>(homeworks.length - 2)
 
     return (
         <div className={styles.wrapper}>
